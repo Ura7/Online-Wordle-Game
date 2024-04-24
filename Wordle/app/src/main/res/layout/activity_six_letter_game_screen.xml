@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#8FBC8F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiveLetterGameScreen">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="572dp"
+        android:text="OYUNCULAR BEKLENİYOR"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wordtextinput"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/playerWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kelime Giriniz"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/wordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Gönder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordtextinput" />
+
+    <LinearLayout
+        android:id="@+id/w_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="32dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/w_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/w_7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/w_13"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_14"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_15"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_16"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_17"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_18"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/w_19"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_20"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_21"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_22"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_23"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/w_25"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_26"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_27"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_28"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_29"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_30"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/w_31"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_32"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_33"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_34"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_35"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/w_36"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/wordle_kare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exitRoomInGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="60dp"
+        android:text="Odadan Ayrıl"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/timertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="25dp"
+        android:text="text" />
+    <TextView
+        android:id="@+id/timertextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="25dp"
+        android:text="text" />
+
+    <TextView
+        android:id="@+id/scoreTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/wordtextinput"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/revengeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exitRoomInGameButton"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="12dp"
+        android:text="Rövanş İsteği"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

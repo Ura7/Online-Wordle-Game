@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "894163327081",
+    "project_id": "coopwordle",
+    "storage_bucket": "coopwordle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894163327081:android:d6ccedc3740afea78eeaf8",
+        "android_client_info": {
+          "package_name": "com.companyname.wordlemaui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgRfXnN435SktTQEWDMLEL72I3B5lS8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894163327081:android:1e87e2be0970a6018eeaf8",
+        "android_client_info": {
+          "package_name": "com.example.wordle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgRfXnN435SktTQEWDMLEL72I3B5lS8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
