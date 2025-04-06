@@ -1,4 +1,4 @@
-First, you log in using the email and password you registered with.
+##First, you log in using the email and password you registered with.
 <p syle="display: inline;">
   <img src="https://github.com/user-attachments/assets/edf6e0a9-df68-42e0-8a13-524c9b0866e6" width="200" /> 
 </p>
